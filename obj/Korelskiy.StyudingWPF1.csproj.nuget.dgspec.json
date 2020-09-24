@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "FontAwesome5": {
+              "target": "Package",
+              "version": "[2.0.8, )"
+            },
             "MvvmLight": {
               "target": "Package",
               "version": "[5.4.1.1, )"

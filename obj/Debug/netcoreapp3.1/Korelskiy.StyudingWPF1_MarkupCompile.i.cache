@@ -1,5 +1,5 @@
 ﻿Korelskiy.StyudingWPF1
-
+1.0.0.0
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\korel\Desktop\Programming\Korelskiy.StyudingWPF1\App.xaml
 11895717287
 
-7-1800624540
+9-713903248
 1941022008462
 Views\Windows\MainWindow.xaml;
 
-False
+True
 

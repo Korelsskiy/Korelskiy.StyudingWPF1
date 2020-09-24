@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BR/tkGbhZXLRLA3rsl4kBqDNz/lJK0SvOeKBN1uwMM+uHCUY27NVR4Z4rSmGYVSzUDq5IUWhK5rEwgribyBLyw==",
+  "dgSpecHash": "SoXWq+vluFvocve0xUU3CG6NfcGdD1FxsohQecuRRHZWI7odxgMEOvi5sFbyN3/Kul/12z7wGLVp6aB+nQZ96g==",
   "success": true,
   "projectFilePath": "C:\\Users\\korel\\Desktop\\Programming\\Korelskiy.StyudingWPF1\\Korelskiy.StyudingWPF1.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\korel\\.nuget\\packages\\fontawesome5\\2.0.8\\fontawesome5.2.0.8.nupkg.sha512",
     "C:\\Users\\korel\\.nuget\\packages\\mvvmlight\\5.4.1.1\\mvvmlight.5.4.1.1.nupkg.sha512"
   ],
   "logs": []
