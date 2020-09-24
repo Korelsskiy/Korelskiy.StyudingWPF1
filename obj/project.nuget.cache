@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BR/tkGbhZXLRLA3rsl4kBqDNz/lJK0SvOeKBN1uwMM+uHCUY27NVR4Z4rSmGYVSzUDq5IUWhK5rEwgribyBLyw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\korel\\Desktop\\Programming\\Korelskiy.StyudingWPF1\\Korelskiy.StyudingWPF1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\korel\\.nuget\\packages\\mvvmlight\\5.4.1.1\\mvvmlight.5.4.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
