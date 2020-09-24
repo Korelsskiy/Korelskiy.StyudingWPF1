@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{23E7B6FF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korelskiy.ConsoleWpf", "..\Korelskiy.ConsoleWpf\Korelskiy.ConsoleWpf.csproj", "{5C07DDC4-6242-41AE-B531-E3E59AD5C16F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFTests", "..\WPFTests\WPFTests.csproj", "{875D7D47-51ED-41CC-9329-F604B22B70F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +25,17 @@ Global
 		{5C07DDC4-6242-41AE-B531-E3E59AD5C16F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C07DDC4-6242-41AE-B531-E3E59AD5C16F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C07DDC4-6242-41AE-B531-E3E59AD5C16F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{875D7D47-51ED-41CC-9329-F604B22B70F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{875D7D47-51ED-41CC-9329-F604B22B70F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{875D7D47-51ED-41CC-9329-F604B22B70F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{875D7D47-51ED-41CC-9329-F604B22B70F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5C07DDC4-6242-41AE-B531-E3E59AD5C16F} = {23E7B6FF-CD1C-4561-97EB-7BFEEC991B5C}
+		{875D7D47-51ED-41CC-9329-F604B22B70F5} = {23E7B6FF-CD1C-4561-97EB-7BFEEC991B5C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {27328CF8-4DCF-4075-98F9-841C45E2132F}
