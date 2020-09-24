@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" mc:Ignorable="d"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cmd ="clr-namespace:Korelskiy.StyudingWPF1.Infrastructure.Commands"
         xmlns:vm ="clr-namespace:Korelskiy.StyudingWPF1.ViewModels"
         xmlns:l="clr-namespace:Korelskiy.StyudingWPF1"
         Title="{Binding Path=Title}" 
@@ -10,13 +11,24 @@
     <Window.DataContext>
         <vm:MainWindowViewModel/>
     </Window.DataContext>
+    <Window.Resources>
+        <cmd:CloseApplicationCommand x:Key="CloseApplicationCommand"/>
+    </Window.Resources>
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Меню">
-                <MenuItem Header="Выход" Command="{Binding CloseApplicationCommand}" CommandParameter=""></MenuItem>
+                <!--<MenuItem Header="Выход" Command="{Binding CloseApplicationCommand}" CommandParameter=""></MenuItem>-->
+                <MenuItem Header="Выход" Command="{StaticResource CloseApplicationCommand}"></MenuItem>
             </MenuItem>
             <MenuItem Header="Опции">
-                <MenuItem Header="Страна"></MenuItem>
+                <MenuItem Header="Страна">
+                    <MenuItem Header="Китай"/>
+                    <MenuItem Header="США"/>
+                    <MenuItem Header="Индия"/>
+                    <MenuItem Header="Япония"/>
+                    <MenuItem Header="Германия"/>
+                </MenuItem>
+                
             </MenuItem>
         </Menu>
         <StatusBar DockPanel.Dock="Bottom">

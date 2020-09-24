@@ -52,7 +52,6 @@ namespace Korelskiy.StyudingWPF1.ViewModels
             CloseApplicationCommand = new LyambdaCommand(OnCloseApplicationCommandExecuted, CanCloseApplicationCommandExecute);
 
             #endregion
-
         }
     }
 }
