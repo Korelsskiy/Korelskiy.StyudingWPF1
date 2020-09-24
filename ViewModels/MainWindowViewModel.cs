@@ -1,5 +1,8 @@
-﻿using Korelskiy.StyudingWPF1.ViewModels.Base;
+﻿using Korelskiy.StyudingWPF1.Infrastructure.Commands;
+using Korelskiy.StyudingWPF1.ViewModels.Base;
 using System.Runtime.CompilerServices;
+using System.Windows;
+using System.Windows.Input;
 
 namespace Korelskiy.StyudingWPF1.ViewModels
 {
@@ -29,5 +32,27 @@ namespace Korelskiy.StyudingWPF1.ViewModels
         public string Status { get => _Status; set => Set(ref _Status, value); }
 
         #endregion
+
+        #region Команды
+
+        public ICommand CloseApplicationCommand { get; }
+
+        private void OnCloseApplicationCommandExecuted(object parametr)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private bool CanCloseApplicationCommandExecute(object p) => true; 
+        #endregion
+
+        public MainWindowViewModel()
+        {
+            #region Команды
+
+            CloseApplicationCommand = new LyambdaCommand(OnCloseApplicationCommandExecuted, CanCloseApplicationCommandExecute);
+
+            #endregion
+
+        }
     }
 }
