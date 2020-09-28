@@ -11,7 +11,6 @@ C:\Users\korel\Desktop\Programming\Korelskiy.StyudingWPF1\obj\Debug\netcoreapp3.
 C:\Users\korel\Desktop\Programming\Korelskiy.StyudingWPF1\obj\Debug\netcoreapp3.1\Korelskiy.StyudingWPF1.g.resources
 C:\Users\korel\Desktop\Programming\Korelskiy.StyudingWPF1\obj\Debug\netcoreapp3.1\Korelskiy.StyudingWPF1.AssemblyInfoInputs.cache
 C:\Users\korel\Desktop\Programming\Korelskiy.StyudingWPF1\obj\Debug\netcoreapp3.1\Korelskiy.StyudingWPF1.AssemblyInfo.cs
-C:\Users\korel\Desktop\Programming\Korelskiy.StyudingWPF1\obj\Debug\netcoreapp3.1\Korelskiy.StyudingWPF1.csproj.CoreCompileInputs.cache
 C:\Users\korel\Desktop\Programming\Korelskiy.StyudingWPF1\obj\Debug\netcoreapp3.1\Korelskiy.StyudingWPF1.dll
 C:\Users\korel\Desktop\Programming\Korelskiy.StyudingWPF1\obj\Debug\netcoreapp3.1\Korelskiy.StyudingWPF1.pdb
 C:\Users\korel\Desktop\Programming\Korelskiy.StyudingWPF1\obj\Debug\netcoreapp3.1\Korelskiy.StyudingWPF1.genruntimeconfig.cache
