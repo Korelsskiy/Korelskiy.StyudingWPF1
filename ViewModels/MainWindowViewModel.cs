@@ -2,10 +2,12 @@
 using Korelskiy.StyudingWPF1.Models;
 using Korelskiy.StyudingWPF1.ViewModels.Base;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
+using System.Windows.Documents;
 using System.Windows.Input;
 
 namespace Korelskiy.StyudingWPF1.ViewModels
@@ -13,6 +15,14 @@ namespace Korelskiy.StyudingWPF1.ViewModels
     internal class MainWindowViewModel: ViewModel
     {
         public ObservableCollection<Group> Groups { get; }
+        public object[] CompositeCollection { get; }
+
+        private object _selectedCompositeValue;
+        public object SelectedCompositeValue
+        {
+            get => _selectedCompositeValue;
+            set => Set(ref _selectedCompositeValue, value);
+        }
 
         private Group _selectedGroup;
         public Group SelectedGroup
@@ -77,6 +87,15 @@ namespace Korelskiy.StyudingWPF1.ViewModels
             });
 
             Groups = new ObservableCollection<Group>(groups);
+
+            var data_list = new List<object>();
+
+            data_list.Add("Кирилл Владимирович");
+            data_list.Add(15);
+            data_list.Add(Groups[1]);
+            data_list.Add(Groups[1].Students[1]);
+
+            CompositeCollection = data_list.ToArray();
             #region Команды
 
             CloseApplicationCommand = new LyambdaCommand(OnCloseApplicationCommandExecuted, CanCloseApplicationCommandExecute);
