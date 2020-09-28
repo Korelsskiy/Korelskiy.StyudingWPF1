@@ -7,6 +7,15 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Resources\DataTemplates\CompositeItemsControlDateTemplates.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\DataTemplates\CompositeItemsDataTemplate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Styles\Buttons.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Windows\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

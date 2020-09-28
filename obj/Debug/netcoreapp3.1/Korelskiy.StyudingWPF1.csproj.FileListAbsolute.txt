@@ -21,3 +21,7 @@ C:\Users\korel\Desktop\Programming\Korelskiy.StyudingWPF1\obj\Debug\netcoreapp3.
 C:\Users\korel\Desktop\Programming\Korelskiy.StyudingWPF1\bin\Debug\netcoreapp3.1\FontAwesome5.Net.dll
 C:\Users\korel\Desktop\Programming\Korelskiy.StyudingWPF1\bin\Debug\netcoreapp3.1\FontAwesome5.dll
 C:\Users\korel\Desktop\Programming\Korelskiy.StyudingWPF1\obj\Debug\netcoreapp3.1\Korelskiy.StyudingWPF1.csproj.CopyComplete
+C:\Users\korel\Desktop\Programming\Korelskiy.StyudingWPF1\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\korel\Desktop\Programming\Korelskiy.StyudingWPF1\obj\Debug\netcoreapp3.1\Resources\Styles\Buttons.baml
+C:\Users\korel\Desktop\Programming\Korelskiy.StyudingWPF1\obj\Debug\netcoreapp3.1\Resources\DataTemplates\CompositeItemsDataTemplate.baml
+C:\Users\korel\Desktop\Programming\Korelskiy.StyudingWPF1\obj\Debug\netcoreapp3.1\Resources\DataTemplates\CompositeItemsControlDateTemplates.baml

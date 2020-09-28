@@ -57,6 +57,38 @@ namespace Korelskiy.StyudingWPF1.ViewModels
 
         #region Команды
 
+        public ICommand CreateNewGroupCommand { get; }
+
+        private bool CanCreateGroupCommandExecute(object p) => true;
+        private void OnCreateGroupCommandExecuted(object p)
+        {
+            var group_maxIndex = Groups.Count + 1;
+            var new_group = new Group()
+            {
+                Name = $"Группа {group_maxIndex}",
+                Students = new ObservableCollection<Student>()
+            };
+
+            Groups.Add(new_group);
+        }
+
+
+        public ICommand DeleteGroupCommand { get; }
+        private bool CanDeleteGroupCommandExecute(object p) => p is Group group && Groups.Contains(group);
+        private void OnDeleteGroupCommandExecuted(object p)
+        {
+            if (!(p is Group group)) return;
+            var group_index = Groups.IndexOf(group);
+
+            Groups.Remove(group);
+
+            if (group_index < Groups.Count)
+                SelectedGroup = Groups[group_index];
+        }
+
+
+
+
         public ICommand CloseApplicationCommand { get; }
 
         private void OnCloseApplicationCommandExecuted(object parametr)
@@ -69,6 +101,14 @@ namespace Korelskiy.StyudingWPF1.ViewModels
 
         public MainWindowViewModel()
         {
+            #region Команды
+
+            CloseApplicationCommand = new LyambdaCommand(OnCloseApplicationCommandExecuted, CanCloseApplicationCommandExecute);
+            CreateNewGroupCommand = new LyambdaCommand(OnCreateGroupCommandExecuted, CanCreateGroupCommandExecute);
+            DeleteGroupCommand = new LyambdaCommand(OnDeleteGroupCommandExecuted, CanDeleteGroupCommandExecute);
+
+            #endregion
+
             var student_index = 1;
             var students = Enumerable.Range(1, 10).Select(i => new Student
             {
@@ -96,11 +136,7 @@ namespace Korelskiy.StyudingWPF1.ViewModels
             data_list.Add(Groups[1].Students[1]);
 
             CompositeCollection = data_list.ToArray();
-            #region Команды
-
-            CloseApplicationCommand = new LyambdaCommand(OnCloseApplicationCommandExecuted, CanCloseApplicationCommandExecute);
-
-            #endregion
+          
         }
     }
 }
