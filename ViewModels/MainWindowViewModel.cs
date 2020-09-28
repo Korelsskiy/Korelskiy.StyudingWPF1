@@ -1,5 +1,9 @@
 ﻿using Korelskiy.StyudingWPF1.Infrastructure.Commands;
+using Korelskiy.StyudingWPF1.Models;
 using Korelskiy.StyudingWPF1.ViewModels.Base;
+using System;
+using System.Collections.ObjectModel;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Input;
@@ -8,6 +12,14 @@ namespace Korelskiy.StyudingWPF1.ViewModels
 {
     internal class MainWindowViewModel: ViewModel
     {
+        public ObservableCollection<Group> Groups { get; }
+
+        private Group _selectedGroup;
+        public Group SelectedGroup
+        {
+            get => _selectedGroup;
+            set => Set(ref _selectedGroup, value);
+        }
         #region Заголовок окна
         private string _Title = "Истребители на вооружении стран мира";
 
@@ -47,6 +59,24 @@ namespace Korelskiy.StyudingWPF1.ViewModels
 
         public MainWindowViewModel()
         {
+            var student_index = 1;
+            var students = Enumerable.Range(1, 10).Select(i => new Student
+            {
+                Name = $"Name {student_index}",
+                Surname = $"Surname {student_index}",
+                Patronymic =$"Patronymic {student_index++}",
+                Birthday = DateTime.Now,
+                Rating = 0
+            });
+
+
+            var groups = Enumerable.Range(1, 20).Select(i => new Group
+            {
+                Name = $"Группа {i}",
+                Students = new ObservableCollection<Student>(students)
+            });
+
+            Groups = new ObservableCollection<Group>(groups);
             #region Команды
 
             CloseApplicationCommand = new LyambdaCommand(OnCloseApplicationCommandExecuted, CanCloseApplicationCommandExecute);
